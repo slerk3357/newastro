@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import vercel from "@astrojs/vercel/serverless";
-import { vanillaExractPlugin } from "@vanilla-extract/vite-plugin";
+import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 
 import react from "@astrojs/react";
 
@@ -10,6 +10,6 @@ export default defineConfig({
   adapter: vercel(),
   integrations: [react()],
   vite: {
-    plugins: [vanillaExractPlugin()]
+    plugins: [vanillaExtractPlugin()]
   }
 });
