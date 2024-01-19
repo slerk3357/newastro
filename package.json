@@ -11,8 +11,17 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
+    "@astrojs/react": "^3.0.9",
     "@astrojs/vercel": "^7.0.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vanilla-extract/css": "^1.14.0",
     "astro": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@vanilla-extract/vite-plugin": "^3.9.4"
   }
 }
