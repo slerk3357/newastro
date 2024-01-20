@@ -1,4 +1,5 @@
 import { style, globalStyle } from "@vanilla-extract/css";
+import { accentLight, accentGradient } from "../layouts/Layout.css";
 
 const hoverClass = ":is(:hover, :focus-within)" as const;
 
@@ -17,7 +18,7 @@ export const linkCard = style({
     selectors: {
         [`&${hoverClass}`]: {
             backgroundPosition: 0,
-            backgroundImage: "var(--accent-gradient)"
+            backgroundImage: `${accentGradient}`
         }
     }
 });
@@ -40,7 +41,7 @@ globalStyle("h2",{
 });
 
 globalStyle(`${linkCard}${hoverClass} h2`,{
-    color: "rgb(var(--accent-light))"
+    color: `rgb(${accentLight})`
 })
 
 globalStyle("p",{
