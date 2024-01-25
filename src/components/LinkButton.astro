@@ -1,0 +1,13 @@
+---
+import { linkButton } from "./LinkButton.css";
+interface Props {
+	href: string;
+}
+
+const { href } = Astro.props;
+---
+<div class=`${linkButton}`>
+    <a href={href}>
+        <slot />
+    </a>
+</div>
